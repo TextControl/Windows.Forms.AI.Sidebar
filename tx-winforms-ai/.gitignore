@@ -1,0 +1,14 @@
+bin/
+obj/
+.research/
+.vs/
+*.user
+*.log
+artifacts/
+*.nupkg
+*.snupkg
+*.gguf
+.env
+.env.*
+ai-connection.json
+connection.json

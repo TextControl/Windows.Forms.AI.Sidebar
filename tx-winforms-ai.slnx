@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="tx-winforms-ai/AISidebar/AISidebar.csproj" />
+  <Folder Name="/Samples/">
+    <Project Path="tx-winforms-ai/Samples/tx-winforms-ai/tx-winforms-ai.csproj" />
+  </Folder>
+</Solution>

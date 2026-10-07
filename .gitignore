@@ -1,0 +1,21 @@
+# Build and IDE state
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.log
+
+# Local verification and generated artifacts
+.research/
+Tests/
+artifacts/
+*.nupkg
+*.snupkg
+
+# Local models and connection secrets
+*.gguf
+.env
+.env.*
+ai-connection.json
+connection.json

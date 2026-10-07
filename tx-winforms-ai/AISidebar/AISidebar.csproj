@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>TXTextControl</RootNamespace>
+    <AssemblyName>AISidebar</AssemblyName>
+    <IsPackable>false</IsPackable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <WarningsAsErrors>$(WarningsAsErrors);CS1591</WarningsAsErrors>
+    <Description>Reusable toolbox component for a TX Text Control AI sidebar with settings, selection actions, typing and grammar suggestions.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="TXTextControl.AI" Version="0.1.0-beta.3" />
+    <PackageReference Include="Microsoft.Extensions.AI" Version="10.9.0" />
+    <PackageReference Include="TXTextControl.TextControl.WinForms.SDK" Version="34.0.5" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <RootNamespace>tx_winforms_ai</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PlatformTarget>x64</PlatformTarget>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="Form1.cs" SubType="Form" />
+    <Compile Update="Form1.Designer.cs" DependentUpon="Form1.cs" />
+    <EmbeddedResource Update="Form1.resx" DependentUpon="Form1.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\AISidebar\AISidebar.csproj" />
+    <!-- The executable needs the SDK's direct build targets to embed its native runtime license. -->
+    <PackageReference Include="TXTextControl.TextControl.WinForms.SDK" Version="34.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="test.rtf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
